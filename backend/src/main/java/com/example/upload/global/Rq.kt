@@ -32,7 +32,7 @@ class Rq(
             UsernamePasswordAuthenticationToken(user, null, user.authorities)
     }
 
-    
+
     val actor: Member
         get() {
             val authentication = SecurityContextHolder.getContext().authentication
