@@ -48,7 +48,9 @@ spring:
       client:
         registration:
           kakao:
-            clientId: ON_SECRET
+            client-id: 65978e546b544ac812105a69308b73c1
+            client-secret: jMSX86TcfBX8zQQln6jkYZ3HfIQkZbKg
+            client-authentication-method: client_secret_post
             scope: profile_nickname, profile_image
             client-name: Kakao
             authorization-grant-type: authorization_code
@@ -72,9 +74,9 @@ springdoc:
 
 
 custom:
-  appName: app4
+  appName: testApp
   prod:
-    domain: qwas.shop
+    domain: devcourse-testing.shop
     backUrl: "https://api.${custom.appName}.${custom.prod.domain}"
     frontUrl: "https://www.${custom.appName}.${custom.prod.domain}"
 
