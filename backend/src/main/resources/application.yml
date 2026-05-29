@@ -74,14 +74,13 @@ springdoc:
 
 
 custom:
-  appName: testApp
   prod:
     domain: devcourse-testing.shop
     backUrl: "https://api.${custom.prod.domain}"
     frontUrl: "https://www.${custom.prod.domain}"
 
   dev:
-    domain: localhost
+    domain: devcourse-testing.shop
     backUrl: "http://${custom.dev.domain}:${server.port}"
     frontUrl: "http://${custom.dev.domain}:3000"
 
